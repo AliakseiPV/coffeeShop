@@ -39,7 +39,6 @@ var splide = new Splide('#image-carousel', {
 	autoplay: true,
 	interval: 5000,
 	pauseOnHover: false,
-	pauseOnFocus: true,
 	speed: 2000,
 	easing: "ease-in-out"
 });
