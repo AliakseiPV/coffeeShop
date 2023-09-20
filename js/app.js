@@ -40,7 +40,8 @@ var splide = new Splide('#image-carousel', {
 	interval: 5000,
 	pauseOnHover: false,
 	speed: 2000,
-	easing: "ease-in-out"
+	easing: "ease-in-out",
+	drag: false
 });
 splide.mount();
 
@@ -52,7 +53,8 @@ var splideReview = new Splide('#image-carousel1', {
 	pauseOnFocus: true,
 	speed: 2000,
 	easing: "ease-in-out",
-	arrows: false
+	arrows: false,
+	drag: false
 });
 splideReview.mount();
 
