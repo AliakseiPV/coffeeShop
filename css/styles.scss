@@ -346,15 +346,6 @@ ul {
 		flex-direction: column;
 		margin-right: $margin;
 		gap: 4rem;
-		transform: translate(10%);
-		opacity: 0;
-		transition: all 0.9s ease 0s;
-	}
-
-	&__right._active {
-		transform: translate(0);
-		opacity: 1;
-		transition: all 1.5s ease 0s;
 	}
 
 	&__right-header {
@@ -362,12 +353,28 @@ ul {
 		text-align: center;
 		font-size: 32px;
 		font-weight: 400;
+		transform: translate(0, 100%);
+		opacity: 0;
+		transition: all 1s ease 0s;
+	}
+
+	&__right-header._active {
+		transform: translate(0);
+		opacity: 1;
 	}
 
 	&__right-text {
 		text-align: center;
 		font-size: 22px;
 		line-height: 32px;
+		transform: translate(0, 100%);
+		opacity: 0;
+		transition: all 0.9s ease 0s;
+	}
+
+	&__right-text._active {
+		transform: translate(0);
+		opacity: 1;
 	}
 }
 
@@ -462,7 +469,6 @@ ul {
 	justify-content: end;
 	align-items: center;
 
-
 	&__header {
 		position: absolute;
 		right: $margin;
@@ -470,7 +476,7 @@ ul {
 		text-align: center;
 		font-size: 4rem;
 		color: $header-color2;
-		transform: translate(10%);
+		transform: translate(5%);
 		opacity: 0;
 		transition: all 1.25s ease 0s;
 	}

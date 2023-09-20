@@ -298,25 +298,31 @@ ul {
   flex-direction: column;
   margin-right: 8.6rem;
   gap: 4rem;
-  transform: translate(10%);
-  opacity: 0;
-  transition: all 0.9s ease 0s;
-}
-.about__right._active {
-  transform: translate(0);
-  opacity: 1;
-  transition: all 1.5s ease 0s;
 }
 .about__right-header {
   color: #385D34;
   text-align: center;
   font-size: 32px;
   font-weight: 400;
+  transform: translate(0, 100%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.about__right-header._active {
+  transform: translate(0);
+  opacity: 1;
 }
 .about__right-text {
   text-align: center;
   font-size: 22px;
   line-height: 32px;
+  transform: translate(0, 100%);
+  opacity: 0;
+  transition: all 0.9s ease 0s;
+}
+.about__right-text._active {
+  transform: translate(0);
+  opacity: 1;
 }
 
 .menu {
@@ -405,7 +411,7 @@ ul {
   text-align: center;
   font-size: 4rem;
   color: #F7B753;
-  transform: translate(10%);
+  transform: translate(5%);
   opacity: 0;
   transition: all 1.25s ease 0s;
 }
