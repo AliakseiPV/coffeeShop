@@ -16,13 +16,10 @@
   scroll-behavior: smooth;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: Roboto;
   background-color: #FDFDFD;
+  overflow-x: hidden !important;
 }
 
 a {

@@ -17,13 +17,10 @@ $review-color: #FFEEDA;
 	scroll-behavior: smooth;
 }
 
-html {
-		overflow-x: hidden;
-}
-
 body {
 	font-family: Roboto;
 	background-color: $bgcolor;
+	overflow-x: hidden !important;
 }
 
 a {
